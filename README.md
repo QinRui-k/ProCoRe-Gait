@@ -1,5 +1,10 @@
 # ProCoRe-Gait
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-3D%20multimodal-red)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Release](https://img.shields.io/badge/Release-method%20code-purple)
+
 Official code organization for **ProCoRe-Gait**, a prototype-constrained counterfactual residual learning framework for interpretable pathological gait analysis.
 
 ProCoRe-Gait constructs an individualized counterfactual normal reference from a compact normal-gait prototype bank, represents pathology as a structured raw-normal residual, and uses the same residual tensor for gait scoring, dementia subtyping, and multi-level abnormality explanation.
