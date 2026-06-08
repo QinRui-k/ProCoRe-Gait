@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+.idea/
+.vscode/
+
+# Local data, features, checkpoints, and experiment outputs
+data/
+Dataset/
+features/
+checkpoint/
+checkpoints/
+eval/
+outputs/
+logs/
+local_experiments/
+
+# Large model/data artifacts
+*.pt
+*.pth
+*.bin
+*.pkl
+*.npy
+*.npz
+*.tar
+*.tar.gz
+*.zip
+*.c3d
+
+# Python environments
+.venv/
+venv/
+env/
+conda-meta/

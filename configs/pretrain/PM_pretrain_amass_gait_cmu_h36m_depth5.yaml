@@ -1,0 +1,63 @@
+# General
+no_eval: True
+finetune: False
+partial_train: null
+
+# Training
+epochs: 40
+checkpoint_frequency: 1
+batch_size: 64
+num_workers: 16
+pin_memory: True
+dropout: 0.0
+learning_rate: 0.0005
+weight_decay: 0.01
+lr_decay: 0.99
+pretrain_3d_curriculum: 30
+log_interval: 500
+
+# Model
+maxlen: 81
+dim_feat: 512
+mlp_ratio: 2
+depth: 5
+dim_rep: 512
+num_heads: 8
+att_fuse: True
+
+# Data
+data_root: Dataset/motion3d/MB3D_f81s9/
+subset_list: [AMASS_GAIT_CMU, H36M-SH]
+subset_ratio: 1.0
+label_list: ['0']
+clip_len: 81
+data_stride: 9
+rootrel: True
+sample_stride: 2
+num_joints: 17
+gt_2d: False
+joints_index: joint
+
+# Loss
+loss_type: joint
+parts_len: [5,3,3,3,3]
+lambda_3d_velocity_feat: 1.0
+lambda_3d_velocity: 20.0
+lambda_scale: 0.5
+lambda_trajectory_interpart: 1
+lambda_trajectory_intrapart: 0.5
+lambda_lv: 0.0
+lambda_lg: 0.0
+lambda_a: 0.0
+lambda_av: 0.0
+
+# Augmentation
+synthetic: True
+flip: True
+mask_ratio: 0.05
+mask_T_ratio: 0.1
+noise: True
+noise_parameters:
+  mean: 0
+  std: 0.002
+d2c_params_path: params/d2c_params.pkl
